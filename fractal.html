@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Fractals</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script src="julia.js"></script>
+    <script src="fractal.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Duru+Sans" rel="stylesheet" type="text/css">
+    <link href="fractal.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h2>Julia Fractals</h2>
+    <p class="heading">
+      These are <a href="http://en.wikipedia.org/wiki/Julia_set">Julia Set</a>
+      fractals drawn in JavaScript using HTML5 Canvas. View the <a
+        href="http://github.com/ndreynolds/canvas-fractals">source on Github</a>
+    <p class="heading">
+      In the examples below, <code>a</code>  and <code>b</code> represent the
+      real and imaginary parts of the complex number <code>c</code>. Change them
+      to generate a new fractal.
+    <section class="fractal">
+      <div class="wrapper">
+        <span class="loading">Loading...</span>
+        <canvas id="fractal1" width="400" height="400"></canvas>
+      </div>
+      <div class="explain">
+        <code>f(z) = z&sup2; + c</code>
+      </div>
+      <div class="controls" data-for="fractal1">
+        <label for="a"><code>c = </code></label>
+        <input name="a" type="text" value="-0.4" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        <label for="b"><code>a + </code></label>
+        <input name="b" type="text" value="0.9" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        b<code><em>i</em></code>
+        <label class="res" for="resolution">res</label>
+        <input name="res" type="text" value="1" 
+          data-base="1" data-step="1" data-min="0" data-max="9"/>
+      </div>
+    </section>
+    <section class="fractal">
+      <div class="wrapper">
+        <span class="loading">Loading...</span>
+        <canvas id="fractal2" width="400" height="400"></canvas>
+      </div>
+      <div class="explain">
+        <code>f(z) = z&sup3; + c</code>
+      </div>
+      <div class="controls" data-for="fractal2">
+        <label for="a"><code>c = </code></label>
+        <input name="a" type="text" value="-0.4" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        <label for="b"><code>a + </code></label>
+        <input name="b" type="text" value="0.9" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        b<code><em>i</em></code>
+        <label class="res" for="resolution">res</label>
+        <input name="res" type="text" value="1" 
+          data-base="1" data-step="1" data-min="0" data-max="9"/>
+      </div>
+    </section>
+    <section class="fractal">
+      <div class="wrapper">
+        <span class="loading">Loading...</span>
+        <canvas id="fractal3" width="400" height="400"></canvas>
+      </div>
+      <div class="explain">
+        <code>f(z) = z^4 + c</code>
+      </div>
+      <div class="controls" data-for="fractal3">
+        <label for="a"><code>c = </code></label>
+        <input name="a" type="text" value="-0.4" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        <label for="b"><code>a + </code></label>
+        <input name="b" type="text" value="0.9" 
+          data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
+        b<code><em>i</em></code>
+        <label class="res" for="resolution">res</label>
+        <input name="res" type="text" value="1" 
+          data-base="1" data-step="1" data-min="0" data-max="9"/>
+      </div>
+    </section>
+    <div class="scrubber" style="display:none">
+      &lt; &gt;
+    </div>
+  </body>
+</html>

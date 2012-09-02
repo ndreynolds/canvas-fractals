@@ -1,0 +1,72 @@
+body {
+  background: #404040 url('texture.png');
+  font-family: 'Duru Sans', serif;
+  font-size: 80%;
+  text-shadow: 0 1px 1px #000;
+  color: #ddd;
+  min-width: 730px;
+}
+a {
+  color: #ddd;
+  font-weight: bold;
+}
+h2 {
+  background: #555;
+  padding: 10px;
+  border: 2px solid #333;
+  font-weight: 200;
+}
+input {
+  border: 1px solid #333;
+  padding: 5px;
+  width: 40px;
+}
+.res {
+  margin-left: 20px;
+}
+code {
+  font-size: 16px;
+}
+.heading {
+  padding: 5px;
+}
+.fractal {
+  padding: 5px;
+  height: 500px;
+}
+.wrapper {
+  float: left;
+  border: 2px solid #333;
+}
+.wrapper .loading {
+  float: left;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 160px;
+}
+.controls {
+  background: #555;
+  padding: 10px;
+  float: left;
+  border: 2px solid #333;
+  margin-left: 20px;
+}
+.explain {
+  margin: 20px;
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+}
+.explain code {
+  font-size: 170%;
+  font-weight: 100;
+}
+.scrubber {
+  position: absolute;
+  background: #333;
+  color: #fff;
+  cursor: col-resize;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
