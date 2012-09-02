@@ -46,8 +46,7 @@ $(document).ready(function() {
         fractal = $('canvas#' + id).data('julia'),
         val = +this.value,
         data = buildData(this);
-    if (isNaN(val) || val < data.min || val > data.max)
-      this.value = data.base;
+    if (isNaN(val) || val < data.min) this.value = data.base;
     loader.show();
     fractal.options[$(this).attr('name')] = val;
     fractal.drawQueued();

@@ -70,3 +70,7 @@ code {
   border-radius: 5px;
   border: 1px solid #000;
 }
+.superscript {
+  vertical-align: top;
+  font-size: 70%;
+}

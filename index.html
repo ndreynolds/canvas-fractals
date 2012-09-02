@@ -15,8 +15,8 @@
       fractals drawn in JavaScript using HTML5 Canvas. View the <a
         href="http://github.com/ndreynolds/canvas-fractals">source on Github</a>
     <p class="heading">
-      In the examples below, <code>a</code>  and <code>b</code> represent the
-      real and imaginary parts of the complex number <code>c</code>. Change them
+      In the examples below, <code>c</code> is a complex number represented as
+      <code>a + b<em>i</em></code>. Change the values of <code>a</code> and <code>b</code>
       to generate a new fractal.
     <section class="fractal">
       <div class="wrapper">
@@ -27,13 +27,13 @@
         <code>f(z) = z&sup2; + c</code>
       </div>
       <div class="controls" data-for="fractal1">
-        <label for="a"><code>c = </code></label>
+        <code>c = </code>
         <input name="a" type="text" value="-0.4" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        <label for="b"><code>a + </code></label>
+        <code>+ </code>
         <input name="b" type="text" value="0.9" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        b<code><em>i</em></code>
+        <code><em>i</em></code>
         <label class="res" for="resolution">res</label>
         <input name="res" type="text" value="1" 
           data-base="1" data-step="1" data-min="0" data-max="9"/>
@@ -48,13 +48,13 @@
         <code>f(z) = z&sup3; + c</code>
       </div>
       <div class="controls" data-for="fractal2">
-        <label for="a"><code>c = </code></label>
+        <code>c = </code>
         <input name="a" type="text" value="-0.4" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        <label for="b"><code>a + </code></label>
+        <code>+ </code>
         <input name="b" type="text" value="0.9" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        b<code><em>i</em></code>
+        <code><em>i</em></code>
         <label class="res" for="resolution">res</label>
         <input name="res" type="text" value="1" 
           data-base="1" data-step="1" data-min="0" data-max="9"/>
@@ -66,16 +66,16 @@
         <canvas id="fractal3" width="400" height="400"></canvas>
       </div>
       <div class="explain">
-        <code>f(z) = z^4 + c</code>
+        <code>f(z) = z<span class="superscript">4</span> + c</code>
       </div>
       <div class="controls" data-for="fractal3">
-        <label for="a"><code>c = </code></label>
+        <code>c = </code>
         <input name="a" type="text" value="-0.4" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        <label for="b"><code>a + </code></label>
+        <code>+ </code>
         <input name="b" type="text" value="0.9" 
           data-base="0" data-step="0.1" data-min="-4" data-max="4"/>
-        b<code><em>i</em></code>
+        <code><em>i</em></code>
         <label class="res" for="resolution">res</label>
         <input name="res" type="text" value="1" 
           data-base="1" data-step="1" data-min="0" data-max="9"/>
